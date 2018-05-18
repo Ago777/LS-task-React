@@ -1,0 +1,198 @@
+
+form{
+    width: 600px;
+    margin: 0 auto;     
+}
+
+/*styles for formtop part*/
+.formtop{
+    padding: 15px 15px 15px 15px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+    color: #888;
+    background-color: white;
+}
+
+.formtop .left{
+    float: left
+}
+
+.formtop .right{
+    float: right
+}
+
+.fa{
+    font-size: 100px;
+    opacity: 0.5
+}
+
+/*styles for formbootom part all components use it*/
+.formbottom{
+    padding: 30px 15px 15px 35px;
+    background-color: #eee;
+    color: black;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.formbottom input[type=text], select{
+    width: 100%;
+    padding: 15px 15px 15px 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;   
+}
+.formbottom input[type=radio]{
+    margin-top: 20px;
+}
+
+/* used by step1 and step 2 comp*/
+fieldset{
+    border: 1px solid #888;
+    margin-bottom: 15px;
+   
+}
+fieldset.step2{
+    padding-bottom: 40px;
+}
+
+/*used by step3 component*/
+.formbottom span{
+    color: red;
+    font-size: 15px;
+}
+
+.formbottom input[type=month]{
+    padding: 13px 15px 13px 20px;
+    margin-top: 5px;
+}
+
+
+.formbottom .cardnumber input{
+    width: 24%;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-size: 15px;
+
+}
+
+.formbottom .cardnumber input:nth-of-type(1){
+    margin-left: 0;
+}
+
+.formbottom .cardinfo{
+    overflow: hidden;
+}
+
+.formbottom .cardinfo input{
+    width: 100%;
+}
+
+.formbottom .cardinfo .right{
+    width: 250px;
+    float: right;
+}
+
+.formbottom .cardinfo .left{
+    width: 250px;
+    float: left;
+}
+
+/*used by all comp*/
+.btn{
+    background-color: #19b9e7;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 35px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;  
+}
+
+.btn:hover{
+    box-shadow: 5px 10px 15px  #888;
+    opacity: 0.7;
+}
+
+.btn:nth-of-type(1){
+    float: right;
+}
+
+/*used by final comp*/
+.finalresult{
+    color: black;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px 20px 20px 20px;
+}
+.finalresult span{
+    color: green;
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+.infofield p{
+   color: green;
+   font-size: 20px;
+   padding-left: 30px;
+}
+.infofield ul li{
+    text-align: center;
+    list-style: none;
+    background-color: #888;
+    color: black;
+    padding: 8px;
+    margin: 0 10px 0 10px;
+    border: 1px solid black; 
+    border-radius: 10px;
+    
+}
+.generalinfo{
+    padding-bottom: 30px;
+}
+
+/* for responsive designe*/
+@media screen and (max-width: 650px){
+    form{
+        width: 300px;
+        margin: 0 auto;
+    }
+    input{
+        border: none;
+    }
+    .formbottom .cardnumber input{
+        width: 58.6px;
+        padding-left: 10px;
+        padding-right: 0px;
+      
+    }
+    .resptxt{
+        font-size: 15px;
+    }
+    .formbottom span{
+        font-size: 10px;
+    }
+    .step2 h3{
+        font-size: 20px;
+    }
+
+    .finalresult h2{
+        font-size: 20px;
+    }
+    .finalresult span{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .finalresult p{
+        padding-left: 0px;
+    }
+    
+    .finalresult ul{
+        padding-left: 0px;
+    }
+
+
+}
